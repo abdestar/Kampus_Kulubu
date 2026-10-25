@@ -1,60 +1,63 @@
-# Kampüs Kulübü — Üç sayfalık statik site
+# Oyun Kulübü — Üç Sayfalık Statik Web Sitesi
 
-BPR201 - İnternet Tabanlı Programlama
-Dr. Öğr. Üyesi Serkan AKSU
-http://www.serkanaksu.net
-aksu@bartin.edu.tr
+## Öğrenci Bilgileri
 
-## İlk kez çalıştırma
-1. GitHub hesabında `kampus-kulubu` adlı repository oluştur. Add README seçeneğini aç.
-2. ZIP'i aç. `index.html`, `etkinlikler.html`, `hakkimizda.html`, `style.css` ve `README.md` dosyalarını repository köküne yükle (Add file / Upload files). ZIP dosyasının kendisini yükleme.
-3. Commit changes ile kaydet.
-4. Code / Codespaces / Create codespace on main seç. Kurulumun bitmesini bekle.
-5. Terminal / New Terminal aç. Aşağıdaki komutu çalıştır:
+- **Öğrenci:** Abdessatar Chabbani
+- **Öğrenci No:** 24675221077
+- **Ders:** BPR201 - İnternet Tabanlı Programlama
+- **Ödev:** Haftalık Proje Ödevi 1
+
+## GitHub Repository
+
+https://github.com/abdestar/Kampus_Kulubu
+
+## Projenin Amacı
+
+Bu proje, Oyun Kulübü için hazırlanmış üç sayfalık statik bir web sitesidir. Projede backend, database, API veya kullanıcı girişi bulunmaz. Sitedeki etkinlikler kurgusaldır ve eğitim amacıyla hazırlanmıştır.
+
+## Sayfalar
+
+- [index.html](./index.html): Ana Sayfa
+- [etkinlikler.html](./etkinlikler.html): Beş etkinlik ve başlığa göre arama
+- [hakkimizda.html](./hakkimizda.html): Hakkımızda
+
+## Dosyalar
+
+- [style.css](./style.css): Ortak görünüm, renkler, sayfa düzeni ve mobil uyumluluk
+- [script.js](./script.js): Etkinlik başlığına göre arama özelliği
+- [AI_NOTLARI.md](./AI_NOTLARI.md): Yapay zekâ desteğiyle ilgili notlar
+- [TEST_NOTLARI.md](./TEST_NOTLARI.md): Yapılan testlerle ilgili notlar
+- [ekran_goruntuleri](./ekran_goruntuleri/): Ekran görüntüleri
+
+## Çalıştırma
+
+### Codespaces terminalinde
+
+Repository kök dizininde terminali açıp şu komutu çalıştırın:
 
 ```bash
 python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
-6. Ports panelinde 8000 portunu bul. Gerekirse Forward a Port ile 8000 ekle. Open in Browser seç. Port Private kalabilir.
-7. Ana Sayfa, Etkinlikler ve Hakkımızda bağlantılarını dene.
-8. HTML/CSS değişikliğinden sonra dosyayı kaydet (Ctrl+S veya Mac'te Cmd+S), browser sayfasını yenile.
+Ardından:
 
-Codespaces varsayılan ortamında Python bulunur. `python3 --version` ile kontrol et. Bu projede npm, framework, database veya uygulama kurulumu gerekmez. Python yalnızca hazır dosyaları sunar. Yerel bilgisayarda HTML dosyalarını çift tıklayarak da açabilirsin.
+1. **Ports** panelinden `8000` portunu bulun.
+2. Port için **Open in Browser** seçeneğine tıklayın.
+3. Açılan sayfadan Ana Sayfa, Etkinlikler ve Hakkımızda bağlantılarını kullanın.
 
-## Dosyalar
-- index.html: Ana Sayfa
-- etkinlikler.html: Üç örnek etkinlik
-- hakkimizda.html: Proje tanıtımı
-- style.css: Ortak renkler, sayfa düzeni ve mobil görünüm
+### Doğrudan açma
 
-## Copilot alıştırması
-Önce dosyayı aç. Chat içinde şunu sor:
+`index.html` dosyasına çift tıklayarak da siteyi açabilirsiniz.
 
-> HTML öğrenmeye yeni başladım. index.html içindeki nav bölümünü satır satır Türkçe açıkla. Kodu değiştirme. href ve aria-current terimlerinin görevini anlat.
+## Arama Özelliği
 
-Sonra şu küçük değişikliği iste:
+Etkinlikler sayfasındaki arama alanı:
 
-> Yalnızca etkinlikler.html dosyasına mevcut article yapısını kullanarak bir GitHub Atölyesi ekle. Tarihi 3 Aralık, saati 14.00 ve yeri Bilgisayar Laboratuvarı olsun. Yeni paket veya JavaScript ekleme. Değişen satırları açıkla.
+- Kullanıcı yazdıkça etkinlik kartlarını filtreler.
+- Büyük/küçük harf farkını etkisiz hâle getirir.
+- Arama metninin başındaki ve sonundaki boşlukları etkisiz hâle getirir.
+- Kaç etkinliğin gösterildiğini sonuç sayacıyla bildirir.
+- Hiç eşleşme yoksa sonuç yok mesajı gösterir.
+- **Temizle** düğmesiyle arama alanını boşaltır ve tüm etkinlikleri yeniden gösterir.
 
-Öneriyi oku. Dört etkinliğin göründüğünü ve diğer sayfaların açıldığını kontrol et. AI_NOTLARI.md dosyasına hangi yardımı aldığını ve nasıl test ettiğini yaz. Copilot erişimin yoksa bir article bloğunu kendin çoğalt.
-
-## Kaydet ve GitHub'a gönder
-Source Control bölümünde diff'i incele. İlgili dosyaları + ile stage et. Anlamlı mesajla Commit yap. Ardından Sync Changes veya Push seç. GitHub repository sayfasında yeni commit'i doğrula.
-
-## Dersi bitirme
-Terminalde Ctrl+C ile web server'ı durdur. https://github.com/codespaces sayfasında ortamın ... menüsünden Stop codespace seç. Sekmeyi kapatmak yeterli değildir. Stop depolamayı silmez. Delete öncesinde dosyaların GitHub'a push edildiğini kontrol et.
-
-## Sık sorunlar
-- Directory listing: index.html yanlış klasörde. Dosyaları repository köküne taşı veya doğru klasörde server'ı başlat.
-- Address already in use: Önce çalışan server'ı Ctrl+C ile kapat. Gerekirse 8001 kullan ve Ports'ta 8001 aç.
-- CSS görünmüyor: Dosya adı style.css ve link yolu aynı olmalı. Büyük/küçük harfe dikkat et.
-- Copilot yanıt vermiyor: Hesabı, planı ve kotayı kontrol et. Proje AI olmadan da çalışır.
-
-## Kaynaklar
-https://github.com/signup
-https://github.com/settings/education/benefits
-https://docs.github.com/en/codespaces/quickstart
-https://docs.github.com/en/codespaces/reference/using-github-copilot-in-github-codespaces
-
-Bu proje eğitim örneğidir. Tarihler ve etkinlikler kurgudur. Kullanıcı girişi, form gönderimi ve database içermez.
+> Bu sitedeki etkinlikler kurgusaldır ve eğitim amaçlıdır.
