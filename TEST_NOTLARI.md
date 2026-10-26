@@ -11,3 +11,7 @@
 | 4 | Yalnızca boşluk yazma / **Temizle**'ye basma | Her iki işlemde de tüm etkinlikler görünür. | Yalnızca boşluk yazınca 5 kart göründü, sayaç "5 etkinlik gösteriliyor." dedi. `oyun` yazıp Temizle'ye basınca kutu boşaldı ve yine 5 kart göründü. | Geçti |
 | 5 | Üç sayfanın menü bağlantılarını açma | Tüm bağlantılar doğru sayfalara gider. | Üç sayfanın her birinden Ana Sayfa, Etkinlikler ve Hakkımızda bağlantılarına tıkladım (9 tıklama). Hepsi doğru sayfayı açtı. | Geçti |
 | 6 | 390 px genişlikte ve Tab tuşuyla kontrol | Yatay taşma olmaz, arama alanına ve düğmeye ulaşılır. | Üç sayfada da yatay kaydırma çıkmadı. Tab sırası: Ana Sayfa, Etkinlikler, Hakkımızda, arama kutusu, Temizle düğmesi. Odak görünür. | Geçti |
+
+## Sonuç
+
+Altı testin altısı geçti, bu nedenle düzeltme gerekmedi. Ekran görüntüleri `ekran_goruntuleri/` klasöründedir.
